@@ -1,0 +1,6 @@
+yaml
+build:
+   docker:
+        web: Dockerfile 
+    run:
+        web: node index.js
