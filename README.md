@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=800&color=F70000&center=true&vCenter=true&width=435&lines=MegaBot+made+by+Benjamin+EXTREAME--XMD" alt="Typing effect"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=800&color=F70000&center=true&vCenter=true&width=435&lines=MegaBot+made+by+Benjamin+EXTREAME-XMD" alt="Typing effect"/>
 </h1>
 
 ---
