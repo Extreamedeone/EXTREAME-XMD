@@ -1,0 +1,15 @@
+name: EXTREAME-XMD
+
+services:
+  - name: megabot
+    docker:
+      image: EXTREAME-XMD:latest
+      build_context:.
+      dockerfile: Dockerfile
+    ports:
+      - 3000
+    env:
+      - key: SESSION_ID
+        value: ""
+    routes:
+      - path: /
