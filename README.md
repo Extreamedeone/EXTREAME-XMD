@@ -119,7 +119,7 @@ We 💖 your support and encourage you to:
 - 🚀 Contribute improvements
 
 <p align="center">
-  <img src="https://img.shields.io/github/stars/Extreamedeone/EXTREAM-XMD?style=social" alt="GitHub Stars"/>
+  <img src="https://img.shields.io/github/stars/Extreamedeone/EXTREAME-XMD?style=social" alt="GitHub Stars"/>
 </p>
 
 <p align="center"><strong>Made with 💥 by Benjamin | Powered by EXTREAME--XMD</strong></p>
