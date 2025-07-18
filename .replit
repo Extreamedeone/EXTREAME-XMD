@@ -1,0 +1,4 @@
+ini
+run = "npm start"
+language = "nodejs"
+entrypoint = "index.js"
