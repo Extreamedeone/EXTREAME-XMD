@@ -62,6 +62,43 @@ Your ultimate WhatsApp bot powered by MegaBot AI
 
 ---
 
+## 📱 Termux Setup Guide (For Android Users)
+
+If you're running EXTREAME-XMD using **Termux**, follow these instructions **after Step 1 and Step 2**:
+
+### 🧰 Step 3: Run the Installer Script
+```bash
+chmod +x install.sh
+./install.sh
+```
+
+> ⏳ This script will install all required system dependencies and get you ready for the bot setup.
+
+---
+
+*🧪 Step 4: Install Bot Dependencies*
+```bash
+npm install
+```
+
+---
+
+*🔐 Step 5: Configure Your Session ID*
+```bash
+nano.env
+```
+> Inside the file, paste your generated `SESSION_ID` like so:
+```env
+SESSION_ID='your_session_id_here'
+```
+> Press `CTRL + X`, then `Y` to save and exit.
+
+---
+
+*🚀 Step 6: Start Your Bot*
+```bash
+npm start
+```
 ## 🌐 Other Deployment Options
 
 | Platform     | Deploy Link |
