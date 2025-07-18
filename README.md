@@ -20,7 +20,7 @@ Your ultimate WhatsApp bot powered by MegaBot AI
 
 > Create your own version of EXTREAME-XMD below
 <br>
-<a href="https://github.com/Extreamedeone/EXTREAM-XMD/fork" target="_blank">
+<a href="https://github.com/Extreamedeone/EXTREAME-XMD/fork" target="_blank">
   <img src="https://img.shields.io/badge/🌟%20Fork%20Repo-blue?style=for-the-badge" alt="Fork Button"/>
 </a>
 
