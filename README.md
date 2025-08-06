@@ -30,7 +30,7 @@ Your ultimate WhatsApp bot powered by MegaBot AI
 
 > Securely pair your WhatsApp account
 <br>
-<a href="https://xtreme-zec5.onrender.com/" target="_blank">
+<a href="https://extreame-xmd.onrender.com/pair" target="_blank">
   <img src="https://img.shields.io/badge/🔗%20Generate%20Session-green?style=for-the-badge" alt="Pair Button"/>
 </a>
 
