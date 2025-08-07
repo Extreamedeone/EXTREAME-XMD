@@ -1,5 +1,5 @@
 const fs = require('fs')
-const {channelInfo}=require('../system/inf.js')
+
 
 global.prefix='.',
 global.owner= ['254791231068'],
