@@ -4,7 +4,7 @@ const {channelInfo}=require('../system/inf.js')
 global.prefix='.',
 global.owner= ['254791231068'],
 global.name= 'Extreame',
-global.SESSION_ID= 'xtreme~LlwW2BwA#sr69X1OF9zE8_F5eR-2b8LppdYbeQM02j50RJ6vZdpo',
+global.SESSION_ID= process.env.SESSION_ID || '',
 //Don't change this part
 global.sudo= ['254791231068'],
 //🤖🤖
