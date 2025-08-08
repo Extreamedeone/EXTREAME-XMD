@@ -94,8 +94,10 @@ You can deploy the bot on multiple platforms with ease. Choose your preferred me
 ### 📦 Download the Bot
 
 Click the button below to download the latest version of EXTREAME-XMD as a ZIP file:
-
-[⬇️ Download EXTREAME-XMD](https://github.com/Extreamedeone/EXTREAME-XMD/archive/refs/heads/main.zip)
+<br>
+<a href="https://github.com/Extreamedeone/EXTREAME-XMD/archive/refs/heads/main.zip" target="_blank">
+  <img src="https://img.shields.io/badge/🔗%20Download%20Zip-blue?style=for-the-badge" alt="Download Zip"/>
+</a>
 
 ---
 
