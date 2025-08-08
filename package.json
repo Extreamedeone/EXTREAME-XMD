@@ -10,6 +10,10 @@
 
   "type": "commonjs",
 
+  "engines": {
+      "node": ">=18.00"
+  },
+  
   "scripts": {
 
     "start": "node index.js"
