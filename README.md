@@ -49,19 +49,6 @@ Your ultimate WhatsApp bot powered by MegaBot AI
 
 ---
 
-### ☁️ If Deploying on Heroku
-
-1. Go to **Heroku Dashboard**
-2. Navigate to `Settings` → `Config Vars`
-3. Add:
-   ```
-   Key: SESSION_ID
-   Value: <your session ID>
-   ```
-4. Click **Deploy**!
-
----
-
 ## 📱 Termux Setup Guide (For Android Users)
 
 If you're running EXTREAME-XMD using **Termux**, follow these instructions **after Step 1 and Step 2**:
@@ -99,15 +86,34 @@ SESSION_ID='your_session_id_here'
 ```bash
 npm start
 ```
-## 🌐 Other Deployment Options
 
-| Platform     | Deploy Link |
-|--------------|-------------|
-| 🔧 **Render**      | [Render Deploy](https://xtreme-zec5.onrender.com/) |
-| ☁️ **Heroku**      | [Heroku](https://dashboard.heroku.com/) |
-| 🧰 **Railway**     | [Railway](https://railway.app/) |
-| 🛠️ **Replit**      | [Replit](https://replit.com/) |
-| 📦 **Local Setup** | Run via Termux, Node.js or Linux panel |
+## 🚀 Deploy EXTREAME-XMD Bot
+
+You can deploy the bot on multiple platforms with ease. Choose your preferred method below:
+
+### 📦 Download the Bot
+
+Click the button below to download the latest version of EXTREAME-XMD as a ZIP file:
+
+[⬇️ Download EXTREAME-XMD](https://github.com/Extreamedeone/EXTREAME-XMD/archive/refs/heads/main.zip)
+
+---
+
+### 🛠️ Supported Deployment Platforms
+
+| Platform     | Method                          | Notes                          |
+|--------------|----------------------------------|--------------------------------|
+| 🖥️ Local PC   | `npm install && npm start`       | Requires Node.js & Git         |
+| 📱 Termux     | `chmod +x install.sh &&./install.sh` | Android CLI setup              |
+| 🌐 Render     | One-click deploy via GitHub     | Auto-restart supported         |
+| 🚂 Railway    | GitHub integration              | Fast and simple                |
+| ☁️ Heroku     | Add SESSION_ID in Config Vars   | Free tier available            |
+| 💻 Replit     | Import repo and run             | Good for testing               |
+| 🔧 Bot-Hosting Panel | Paste SESSION_ID in `.env` | Easiest for beginners          |
+
+---
+
+Make sure to configure your `.env` file with your `SESSION_ID` before starting the bot. Need help? Just ask!
 
 ---
 
