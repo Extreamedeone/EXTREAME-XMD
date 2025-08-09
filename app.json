@@ -58,7 +58,7 @@
       "description": "Enter your display name.",
       "value": "Extreame"
 },
-    "PREFIX": {
+    "BOT_PREFIX": {
       "description": "Set the command prefix ",
       "value": "."
 }
