@@ -1,26 +1,31 @@
-const fs = require('fs')
+const path = require('path');
+require('dotenv').config({
+  path: path.resolve(__dirname, '../.env')
+});
 
+const envPrefix = process.env.BOT_PREFIX;
 
-global.prefix='.',
-global.owner= ['254791231068'],
-global.name= 'Extreame',
-global.SESSION_ID= process.env.SESSION_ID || '',
+global.prefix = envPrefix || '.';
+
+global.owner= process.env.OWNER_NUMBER?.split(',') || ['254791231068']
+global.name= process.env.NAME || 'Extreame';
+global.SESSION_ID= process.env.SESSION_ID || '';
 //Don't change this part
-global.sudo= ['254791231068'],
+global.sudo= ['254791231068']
 //🤖🤖
-global.autobio = true
-global.autostatusview = true
-global.welcome = true
+global.autobio = process.env.autobio === 'true';
+global.autostatusview = process.env.autostatusview === 'true';
+global.welcome = process.env.welcome === 'true';
 global.antispam = true
-global.autoreact = true
-global.autoread = false
-global.autoview = true
-global.autoTyping = true
-global.autoRecording = false
+global.autoreact = process.env.autoreact === 'true';
+global.autoread = process.env.autoread === 'false';
+global.autoview = process.env.autoview === 'true';
+global.autoTyping = process.env.autoTyping === 'true';
+global.autoRecording = process.env.autoRecording === 'false';
+global.packname = process.env.STICKER_NAME || 'fury';
+global.author = 'extreame';
+
 global.react=[ '👿, 🤤, 💧, ✨, ❤️, 💙, 💖, 👁️, 💝, 💋, 💞, 💘, 👀,  👣, 😂' ]
-//extreame
-global.packname = 'fury',
-global.author = 'extreame',
 
 global.linkch = 'https://whatsapp.com/channel/0029VanySqUBPzjYa2929d0U',
 
@@ -38,17 +43,3 @@ require('fs').watchFile(file, () => {
   delete require.cache[file]
   require(file)
 })
-
-global.badwords = [];
-global.badwords.push("fuck");
-global.badwords.push("stupid");
-global.badwords.push("idiot");
-
-global.antiCall = {};
-global.antiCall["254791231068@s.whatsapp.net"] = true;
-
-global.protections = {};
-global.protections["120363383707634434@g.us"] = { antibot: false, antisticker: false, antibadword: false};
-global.protections["120363383707634434@g.us"]["antibot"] = true;
-global.protections["120363383707634434@g.us"]["antibadword"] = true;
-global.protections["120363383707634434@g.us"]["antisticker"] = true;
