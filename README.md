@@ -37,6 +37,14 @@ Your ultimate WhatsApp bot powered by MegaBot AI
 ---
 
 ## ⚙️ Setup Instructions
+### If Deploy on heroku
+1. Fork and start the repo.
+2. Get session_ID
+3. Press the button bellow👇👇
+<br>
+<a href="https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Extreamedeone/EXTREAME-XMD" target="_blank">
+  <img src="https://img.shields.io/badge/🔗%20Deploy%20heroku-red?style=for-the-badge" alt="Deploy heroku"/>
+</a>
 
 ### 💻 If Deploying via Panel
 
