@@ -51,7 +51,7 @@
       "value": "true"
 },
     "OWNER_NUMBER": {
-      "description": "Enter your WhatsApp number (e.g., 254791231068).",
+      "description": "Enter your WhatsApp number in [] (e.g.,['254791231068']).",
       "required": true
 },
     "NAME": {
