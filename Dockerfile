@@ -6,6 +6,7 @@ COPY package*.json./
 RUN npm install
 
 COPY..
+COPY.env./
 
 RUN apk add --no-cache \
     ffmpeg \
