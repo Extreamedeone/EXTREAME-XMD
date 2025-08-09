@@ -1,0 +1,74 @@
+
+{
+  "name": "EXTREAME-XMD",
+  "description": "A WhatsApp bot powered by Baileys with session-based deployment.",
+  "repository": "https://github.com/Extreamedeone/EXTREAME-XMD",
+  "keywords": ["whatsapp", "bot", "extreame", "xmd", "baileys"],
+  "env": {
+    "SESSION_ID": {
+      "description": "Put the session-id here.",
+      "required": true
+},
+    "autoread": {
+      "description": "Make it true if you want the bot to read all incoming messages.",
+      "value": "false"
+},
+    "autostatusview":{
+      "description": "set to true/false",
+      "value": "true"
+},
+     "welcome": {
+      "description": "set to true/false",
+      "value": "true"
+},
+
+    "autoreact": {
+      "description": "set to true/false",
+      "value": "true"
+},
+    "autobio": {
+      "description": "set to true/false",
+      "value": "false"
+},
+    "autoview": {
+      "description": "set to true/false",
+      "value": "true"
+},
+    "autoTyping": {
+      "description": "set to true/false",
+      "value": "true"
+},
+    "autoRecording": {
+      "description": "set to true/false",
+      "value": "false"
+},
+    "STICKER_NAME": {
+      "description": "Type your sticker pack name.",
+      "value": "EXTREAME"
+},
+    "WELCOME": {
+      "description": "Make it true if you want welcome and goodbye messages in groups.",
+      "value": "true"
+},
+    "OWNER_NUMBER": {
+      "description": "Enter your WhatsApp number (e.g., 254791231068).",
+      "required": true
+},
+    "NAME": {
+      "description": "Enter your display name.",
+      "value": "Extreame"
+},
+    "PREFIX": {
+      "description": "Set the command prefix ",
+      "value": "."
+}
+},
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+}
+  ],
+  "scripts": {
+    "postdeploy": "echo EXTREAME-XMD bot deployed successfully!"
+}
+}
