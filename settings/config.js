@@ -6,22 +6,23 @@ require('dotenv').config({
 const envPrefix = process.env.BOT_PREFIX;
 
 global.prefix = envPrefix || '.';
+const numbre= process.env.OWNER_NUMBER;
 
-global.owner= process.env.OWNER_NUMBER?.split(',') || ['254791231068']
+global.owner= [`${number}`]
 global.name= process.env.NAME || 'Extreame';
 global.SESSION_ID= process.env.SESSION_ID || '';
 //Don't change this part
 global.sudo= ['254791231068']
 //🤖🤖
-global.autobio = process.env.autobio === 'true';
-global.autostatusview = process.env.autostatusview === 'true';
-global.welcome = process.env.welcome === 'true';
+global.autobio = process.env.AUTOBIO === 'true';
+global.autostatusview = process.env.AUTOSTATUSVIEW === 'true';
+global.welcome = process.env.WELCOME === 'true';
 global.antispam = true
-global.autoreact = process.env.autoreact === 'true';
-global.autoread = process.env.autoread === 'false';
-global.autoview = process.env.autoview === 'true';
-global.autoTyping = process.env.autoTyping === 'true';
-global.autoRecording = process.env.autoRecording === 'false';
+global.autoreact = process.env.AUTOREACT === 'true';
+global.autoread = process.env.AUTOREAD === 'false';
+global.autoview = process.env.AUTOVIEW === 'true';
+global.autoTyping = process.env.AUTOTYPING === 'true';
+global.autoRecording = process.env.AUTORECORDING === 'false';
 global.packname = process.env.STICKER_NAME || 'fury';
 global.author = 'extreame';
 
@@ -30,10 +31,10 @@ global.react=[ '👿, 🤤, 💧, ✨, ❤️, 💙, 💖, 👁️, 💝, 💋, 
 global.linkch = 'https://whatsapp.com/channel/0029VanySqUBPzjYa2929d0U',
 
 global.mess = {
-    group: `𝙊𝙣𝙡𝙮 𝙂𝙧𝙤𝙪𝙥 👿`,
-    admin: `𝙊𝙣𝙡𝙮 𝘼𝙙𝙢𝙞𝙣 👹`,
-    owner: `𝙊𝙣𝙡𝙮 𝙊𝙬𝙣𝙚𝙧 𝘼𝙘𝙘𝙚𝙨𝙨 🤡`,
-    botadmin: `𝙊𝙣𝙡𝙮 𝘽𝙤𝙩 𝘼𝙙𝙢𝙞𝙣`
+    group: `*_This is a group command!!!_*`,
+    admin: `*_Bot must be admin,make me admin first😌_*`,
+    owner: `*_You aren't authorized to use owner only command_*`,
+    botadmin: `*_Bot requires admin privileges!!!_*`
 }
 
 let file = require.resolve(__filename)
