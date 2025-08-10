@@ -9,7 +9,7 @@ global.prefix = envPrefix || '.';
 const numbre= process.env.OWNER_NUMBER;
 
 global.owner= [`${number}`]
-global.name= process.env.NAME || 'Extreame';
+global.name= process.env.OWNER_NAME || 'Extreame';
 global.SESSION_ID= process.env.SESSION_ID || '';
 //Don't change this part
 global.sudo= ['254791231068']
