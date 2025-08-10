@@ -50,7 +50,7 @@
       "description": "Enter your WhatsApp number (e.g. 2547xxxxx).",
       "required": true
 },
-    "NAME": {
+    "OWNER_NAME": {
       "description": "Enter your display name.",
       "value": "Extreame"
 },
