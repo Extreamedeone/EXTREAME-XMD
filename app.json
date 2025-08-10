@@ -9,36 +9,32 @@
       "description": "Put the session-id here.",
       "required": true
 },
-    "autoread": {
+    "AUTOREAD": {
       "description": "Make it true if you want the bot to read all incoming messages.",
       "value": "false"
 },
-    "autostatusview":{
-      "description": "set to true/false",
-      "value": "true"
-},
-     "welcome": {
+    "AUTOSTATUSVIEW":{
       "description": "set to true/false",
       "value": "true"
 },
 
-    "autoreact": {
+    "AUTOREACT": {
       "description": "set to true/false",
       "value": "true"
 },
-    "autobio": {
+    "AUTOBIO": {
       "description": "set to true/false",
       "value": "false"
 },
-    "autoview": {
+    "AUTOVIEW": {
       "description": "set to true/false",
       "value": "true"
 },
-    "autoTyping": {
+    "AUTOTYPING": {
       "description": "set to true/false",
       "value": "true"
 },
-    "autoRecording": {
+    "AUTORECORDING": {
       "description": "set to true/false",
       "value": "false"
 },
@@ -51,7 +47,7 @@
       "value": "true"
 },
     "OWNER_NUMBER": {
-      "description": "Enter your WhatsApp number in [] (e.g.,['254791231068']).",
+      "description": "Enter your WhatsApp number (e.g. 2547xxxxx).",
       "required": true
 },
     "NAME": {
