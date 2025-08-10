@@ -1,17 +1,17 @@
-const settings = require('../settings');
+require('./../../settings/config');
 
-async function ownerCommand(sock, chatId) {
+async function ownerCommand(ben, chatId) {
     const vcard = `
 BEGIN:VCARD
 VERSION:3.0
-FN:${settings.botOwner}
-TEL;waid=${settings.ownerNumber}:${settings.ownerNumber}
+FN:${global.name}
+TEL;waid=${global.owner}:${global.owner}
 END:VCARD
 `;
 
-    await sock.sendMessage(chatId, {
-        contacts: { displayName: settings.botOwner, contacts: [{ vcard }] },
+    await ben.sendMessage(chatId, {
+        contacts: { displayName: global.name, contacts: [{ vcard }] },
     });
 }
 
-module.exports = ownerCommand;
+module.exports ={ ownerCommand}
