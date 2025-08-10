@@ -65,10 +65,10 @@ async function songCommand(ben, chatId, m) {
 
 } catch (err) {
     console.error(err);
-    await ben.sendMessage(chatId, {
+    /*await ben.sendMessage(chatId, {
       text: '⚠️ Error fetching song.',
 ...channelInfo
-}, { quoted: m});
+}, { quoted: m});*/
 }
 }
 
