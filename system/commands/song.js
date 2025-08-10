@@ -13,33 +13,47 @@ const channelInfo = {
         }
     }
 };
+
 async function songCommand(ben, chatId, m) {
+  const axios = require('axios');
 
-const fetch = require('node-fetch');
-const axios = require('axios');
+  const body = typeof m.text === 'string'? m.text: '';
+  const bodyTrimmed = body.trim();
+  const args = bodyTrimmed.split(/\s+/).slice(1);
+  const query = args.join(' ');
 
-const body = typeof m.text === 'string'? m.text: '';
-const bodyTrimmed = body.trim();
-const args = bodyTrimmed.split(/\s+/).slice(1);
-const query = args.join(' ');
+  if (!query) {
+    return ben.sendMessage(chatId, {
+      text: '*_Provide a search query for song unleashing_*',
+...channelInfo
+}, { quoted: m});
+}
 
-  if (!query) return ben.sendMessage(chatId, { text: '*_Provide a search query for song unleashing_*', ...channelInfo}, {quoted: m})
-
-  const apiUrl = `https://keith.vercel.app/download/spotify?q=${encodeURIComponent(query)}`;
+  const apiUrl = `https://apis-keith.vercel.app/download/spotify?q=${encodeURIComponent(query)}`;
 
   try {
+    const res = await axios.get(apiUrl);
+    const data = res?.data?.result?.track;
 
-const res = await fetch(apiUrl);
-const data = (await res.json())?.res?.result;
-
-    if (!data.downloadLink) {
-      return await ben.sendMessage(chatId, { text: '❌ Song not found or no download link available.', ...channelInfo}, { quoted: m});
+    if (!data ||!data.downloadLink ||!data.thumbnail) {
+      return ben.sendMessage(chatId, {
+        text: '❌ Song not found or missing media info.',
+...channelInfo
+}, { quoted: m});
 }
 
     await ben.sendMessage(chatId, {
       image: { url: data.thumbnail},
-      caption: `🎵 *Title:* ${data.title}\n🎤 *Artist:* ${data.artist}\n⏱️ *Duration:* ${data.duration}`,
-      ...channelInfo
+      caption: `🎶 *EXTREAME-XMD Music Drop* 🎶
+
+╭───★彡 🎧 彡★───╮
+🎼 *Title:* ${data.title}
+🎤 *Artist:* ${data.artist}
+⏱️ *Duration:* ${data.duration}
+╰───★彡 🎶 彡★───╯
+
+🔥 Powered by EXTREAME-XMD`,
+...channelInfo
 }, { quoted: m});
 
     const audioRes = await axios.get(data.downloadLink, { responseType: 'arraybuffer'});
@@ -51,7 +65,10 @@ const data = (await res.json())?.res?.result;
 
 } catch (err) {
     console.error(err);
-    await ben.sendMessage(chatId, { text: '⚠️ Error fetching song.', ...channelInfo}, { quoted: m});
+    await ben.sendMessage(chatId, {
+      text: '⚠️ Error fetching song.',
+...channelInfo
+}, { quoted: m});
 }
 }
 
