@@ -6,11 +6,11 @@ require('dotenv').config({
 const envPrefix = process.env.BOT_PREFIX;
 
 global.prefix = envPrefix || '.';
-const number= process.env.OWNER_NUMBER;
+const number= process.env.OWNER_NUMBER || '254791231068';
 
 global.owner= [`${number}`]
 global.name= process.env.OWNER_NAME || 'Extreame';
-global.SESSION_ID= process.env.SESSION_ID || '';
+global.SESSION_ID= process.env.SESSION_ID || 'xtreme~ihp02L4Z#epI2dKek4VsQ6ZKFbfoQuB4gCQlUpUwQ04RKGIr6TuU';
 //Don't change this part
 global.sudo= ['254791231068']
 //🤖🤖
