@@ -6,7 +6,7 @@ require('dotenv').config({
 const envPrefix = process.env.BOT_PREFIX;
 
 global.prefix = envPrefix || '.';
-const numbre= process.env.OWNER_NUMBER;
+const number= process.env.OWNER_NUMBER;
 
 global.owner= [`${number}`]
 global.name= process.env.OWNER_NAME || 'Extreame';
